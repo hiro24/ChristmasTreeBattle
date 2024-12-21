@@ -32,7 +32,7 @@ while True:
     now = datetime.now()
 
     # Check if today is a weekday (Monday to Friday) and the current time is between 8:00 AM and 4:30 PM
-    if now.weekday() in range(0, 5) and now.time() >= datetime.strptime("08:00", "%H:%M").time() and now.time() <= datetime.strptime("22:30", "%H:%M").time():
+    if now.weekday() in range(0, 5) and now.time() >= datetime.strptime("08:00", "%H:%M").time() and now.time() <= datetime.strptime("16:30", "%H:%M").time():
         try:
             # Load device states from file
             with open(DEVICE_STATE_FILE, "r") as file:
